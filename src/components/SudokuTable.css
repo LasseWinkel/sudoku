@@ -1,0 +1,88 @@
+.SudokuTable {
+  display: flex;
+}
+
+.grid-title {
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.button-nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  margin: 2rem;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.gen-easy {
+  background-color: #1fad1b;
+}
+
+.gen-easy:hover {
+  background-color: #1a9116;
+}
+
+.gen-medium {
+  background-color: #2133db;
+}
+
+.gen-medium:hover {
+  background-color: #18259c;
+}
+
+.gen-hard {
+  background-color: #db2121;
+}
+
+.gen-hard:hover {
+  background-color: #9c1818;
+}
+
+@media print {
+  .gen-easy,
+  .gen-medium,
+  .gen-hard,
+  .btn-export {
+    display: none;
+  }
+}

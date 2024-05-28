@@ -1,0 +1,31 @@
+.NumberField {
+  border: 1px solid #ccc;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-line {
+  border-top: 2px solid black;
+}
+
+.right-line {
+  border-right: 2px solid black;
+}
+
+.bottom-line {
+  border-bottom: 2px solid black;
+}
+
+.left-line {
+  border-left: 2px solid black;
+}
+
+@media print {
+  .NumberField {
+    width: 2rem;
+    height: 2rem;
+  }
+}

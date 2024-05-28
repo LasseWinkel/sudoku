@@ -1,0 +1,26 @@
+.Generator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-right: 10rem;
+}
+
+.btn-export {
+  background-color: #f06d22;
+}
+
+.btn-export:hover {
+  background-color: #e05515;
+}
+
+@media print {
+  .table-container {
+    margin-right: 0rem;
+  }
+}
