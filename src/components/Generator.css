@@ -1,14 +1,17 @@
 .Generator {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .table-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  margin-right: 10rem;
+}
+
+.last-table-container {
+  margin-bottom: 3rem;
 }
 
 .btn-export {
@@ -21,6 +24,6 @@
 
 @media print {
   .table-container {
-    margin-right: 0rem;
+    page-break-before: always; /* Ensure each table section starts on a new page */
   }
 }

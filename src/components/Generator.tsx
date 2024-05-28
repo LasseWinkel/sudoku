@@ -13,6 +13,12 @@ function Generator() {
         <SudokuTable />
         <SudokuTable />
       </div>
+      <div className="table-container last-table-container">
+        <SudokuTable />
+        <SudokuTable />
+        <SudokuTable />
+        <SudokuTable />
+      </div>
       <button className="btn btn-export" onClick={exportFunction}>
         Print
       </button>
