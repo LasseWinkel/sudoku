@@ -44,6 +44,23 @@
   width: auto;
 }
 
+@media (max-width: 767px) {
+  .SudokuTable {
+    flex-direction: column;
+  }
+
+  .button-nav-bar {
+    flex-direction: row;
+  }
+
+  .btn {
+    min-height: 2rem;
+    padding: calc(0.875rem - 1px) calc(1.2rem - 1px);
+    margin: 1rem;
+    margin-bottom: -0.8rem;
+  }
+}
+
 .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   transform: translateY(-1px);

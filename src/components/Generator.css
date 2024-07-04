@@ -10,6 +10,12 @@
   grid-gap: 30px;
 }
 
+@media (max-width: 767px) {
+  .table-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .last-table-container {
   margin-bottom: 3rem;
 }
@@ -25,5 +31,6 @@
 @media print {
   .table-container {
     page-break-before: always; /* Ensure each table section starts on a new page */
+    grid-template-columns: 1fr 1fr;
   }
 }
